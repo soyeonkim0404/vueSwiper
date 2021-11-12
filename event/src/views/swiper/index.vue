@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <component :is="componentData[pageNum]" :pageNum="pageNum" :stepNum="stepNum" />
+    <component :is="componentData[pageNum]" :pageNum.sync="pageNum" :stepNum.sync="stepNum" />
   </div>
 </template>
 

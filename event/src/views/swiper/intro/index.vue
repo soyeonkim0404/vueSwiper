@@ -15,7 +15,8 @@
     },
     methods: {
       nextStepEvent() {
-        this.$emit("pageNum", this.num + 1);
+        this.$emit("update:pageNum", this.num + 1);
+        console.log(this.num + 1);
       }
     }
   };

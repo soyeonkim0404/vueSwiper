@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "intro",
+    name: "step",
     props: ["pageNum"],
     data() {
       return {
@@ -15,7 +15,7 @@
     },
     methods: {
       nextStepEvent() {
-        this.$emit("pageNum", this.num + 1);
+        this.$emit("update:pageNum", this.num + 1);
       }
     }
   };
@@ -23,7 +23,7 @@
 
 <style scoped>
   button {
-    background: #2c3e50;
+    background: red;
     width: 400px;
     height: 65px;
     border: none;
